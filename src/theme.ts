@@ -12,6 +12,7 @@ const config = defineConfig({
         danger: { value: "#F65252" },
         grey: { value: "#59676E" },
         text: { value: '#F8FBFD'},
+        text1: { value: '#041822' },
         background: { value: "#DDE4F2" },
         },
       },

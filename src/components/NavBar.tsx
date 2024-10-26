@@ -40,7 +40,7 @@ const NavBar = () => {
             <Text fontWeight={"semibold"}>Home</Text>
           </HStack>
           {/* ======== features link ======== */}
-          <HStack gap={"1"} alignItems={"center"}>
+          <HStack gap={"1"} alignItems={"center"} paddingInline={'0.90625rem'}>
             <Icon width={1} height={1}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

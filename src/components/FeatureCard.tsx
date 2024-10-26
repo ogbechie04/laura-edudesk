@@ -1,11 +1,23 @@
+import React from "react";
 import { Box, HStack, Image, Separator, Text, VStack } from "@chakra-ui/react";
-import MoneyAddIcon from "../MoneyAddIcon";
-import walletManagementImage from "../../assets/wallet-management-image.svg";
+import MoneyAddIcon from "./MoneyAddIcon";
+import walletManagementImage from "../assets/wallet-management-image.svg";
 
-const WalletManagenmentCard = () => {
+interface FeatureCardProps {
+  featureHeading: string;
+  featureDescription: string;
+  featurePreview: string;
+  maxWidth: string;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({
+  featureHeading = "Secured Wallet Management",
+  featureDescription = "Access A Secure Wallet To Handle Payments For Salaries And Expense Without Any Hassle",
+  featurePreview = walletManagementImage, maxWidth = "25.625rem"
+}) => {
   return (
     <Box
-      maxWidth={"25.625rem"}
+      maxWidth={maxWidth}
       paddingTop={5}
       paddingLeft={"1.625rem"}
       paddingRight={"0.8125rem"}
@@ -17,7 +29,7 @@ const WalletManagenmentCard = () => {
       <HStack gap={"0.5625rem"}>
         <MoneyAddIcon />
         <Text color={"brand.text1"} fontWeight={"semibold"} fontSize={"xl"}>
-          Secured Wallet Management
+          {featureHeading}
         </Text>
       </HStack>
       <Separator
@@ -28,15 +40,14 @@ const WalletManagenmentCard = () => {
       {/* ======== card body ======== */}
       <VStack gap={3.5}>
         <Text color={"brand.grey"} lineHeight={"1.75rem"} fontFamily={"static"}>
-          Access A Secure Wallet To Handle Payments For Salaries And Expenses
-          Without Any Hassle
+          {featureDescription}
         </Text>
         <Box>
-          <Image src={walletManagementImage} />
+          <Image src={featurePreview} />
         </Box>
       </VStack>
     </Box>
   );
 };
 
-export default WalletManagenmentCard;
+export default FeatureCard;

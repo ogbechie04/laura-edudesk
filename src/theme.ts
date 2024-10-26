@@ -14,6 +14,7 @@ const config = defineConfig({
         text: { value: '#F8FBFD'},
         text1: { value: '#041822' },
         background: { value: "#DDE4F2" },
+        border: { value: '#E2E9F6' }
         },
       },
       fonts: {

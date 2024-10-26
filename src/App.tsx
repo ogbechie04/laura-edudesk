@@ -1,15 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Logo from "./components/Logo";
 import NavBar from "./components/NavBar";
-import WalletManagenmentCard from "./components/feature-cards/WalletManagementCard";
-import MoneyAddIcon from "./components/MoneyAddIcon";
+import FeaturesSection from "./sections/FeaturesSection";
+import IncomeReportSection from "./sections/IncomeReportSection";
+import AngledCard from "./components/AngledCard";
 
 function App() {
   return (
     <>
       <NavBar />
-      <WalletManagenmentCard />
-      <MoneyAddIcon />
+      <FeaturesSection />
+      <IncomeReportSection />
+      <AngledCard />
     </>
   );
 }

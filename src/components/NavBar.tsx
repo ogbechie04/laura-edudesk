@@ -40,7 +40,7 @@ const NavBar = () => {
             <Text fontWeight={"semibold"}>Home</Text>
           </HStack>
           {/* ======== features link ======== */}
-          <HStack gap={"1"} alignItems={"center"} paddingInline={'0.90625rem'}>
+          <HStack gap={"1"} alignItems={"center"} paddingInline={"0.90625rem"}>
             <Icon width={1} height={1}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -105,6 +105,13 @@ const NavBar = () => {
         width={"17.25rem"}
         alignItems={"center"}
         backgroundColor={"brand.primary"}
+        _hover={{
+          backgroundColor: "brand.text",
+          color: "brand.primary",
+          transform: "scale(1.05)",
+          borderColor: "brand.primary",
+          borderWidth: "1px",
+        }}
       >
         <Text
           fontSize={"large"}

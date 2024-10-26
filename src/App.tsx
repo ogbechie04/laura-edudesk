@@ -5,6 +5,9 @@ import FeaturesSection from "./sections/FeaturesSection";
 import IncomeReportSection from "./sections/IncomeReportSection";
 import AngledCard from "./components/AngledCard";
 import SalaryPaymentsSection from "./sections/SalaryPaymentsSection";
+import HowItWorksSteps from "./components/HowItWorksSteps";
+import HowItWorksSection from "./sections/HowItWorksSection";
+import PlanCard from "./components/PlanCard";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <IncomeReportSection />
       <AngledCard />
       <SalaryPaymentsSection />
+      <HowItWorksSteps />
+      <HowItWorksSection />
+      <PlanCard />
     </>
   );
 }

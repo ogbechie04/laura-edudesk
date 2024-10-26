@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import FeaturesSection from "./sections/FeaturesSection";
 import IncomeReportSection from "./sections/IncomeReportSection";
 import AngledCard from "./components/AngledCard";
+import SalaryPaymentsSection from "./sections/SalaryPaymentsSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <FeaturesSection />
       <IncomeReportSection />
       <AngledCard />
+      <SalaryPaymentsSection />
     </>
   );
 }

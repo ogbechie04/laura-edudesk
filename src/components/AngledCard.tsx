@@ -5,29 +5,33 @@ interface AngledCardProps {
   title: string;
   value: string;
   percentage: string;
+  percentageColor: string;
+  percentageContainerColor: string;
   progressWidth: string;
   progressColor: string;
-  rotateAngle: string
+  rotateAngle: string;
 }
 
 const AngledCard: React.FC<AngledCardProps> = ({
   title = "Total Outstanding",
   value = "46,456",
   percentage = "-5.76%",
+  percentageColor,
+  percentageContainerColor,
   progressWidth = "3.837rem",
   progressColor = "brand.warning",
-  rotateAngle
+  rotateAngle,
 }) => {
   return (
     <Box
       width={"fit-content"}
-      backgroundColor={"brand.background"}
+      backgroundColor={"#fff"}
       paddingInlineStart={"0.5031rem"}
       paddingBlockStart={"0.6288rem"}
       paddingInlineEnd={"3.1025rem"}
       paddingBlockEnd={"1.2669rem"}
       transform={`rotate(${rotateAngle})`}
-      borderRadius={'0.6934rem'}
+      borderRadius={"0.6934rem"}
     >
       <Text color={"brand.text1"} fontSize={"0.8331rem"} lineHeight={"normal"}>
         {title}
@@ -46,13 +50,20 @@ const AngledCard: React.FC<AngledCardProps> = ({
         </Text>
         <Box
           padding={"0.185rem"}
-          backgroundColor={"rgba(233, 8, 8, 0.13)"}
-          borderRadius={'0.65rem'}
-          maxHeight={'1.0631rem'}
-          display={'flex'}
-          alignItems={'center'}
+          backgroundColor={percentageContainerColor}
+          borderRadius={"0.65rem"}
+          maxHeight={"1.0631rem"}
+          display={"flex"}
+          alignItems={"center"}
         >
-          <Text color={"brand.danger"} opacity={'initial'} paddingInline={'0.4313rem'} fontWeight={'light'} fontSize={'0.4623rem'} lineHeight={'1.156rem'}>
+          <Text
+            color={percentageColor}
+            opacity={"initial"}
+            paddingInline={"0.4313rem"}
+            fontWeight={"light"}
+            fontSize={"0.4623rem"}
+            lineHeight={"1.156rem"}
+          >
             {percentage}
           </Text>
         </Box>
@@ -62,7 +73,7 @@ const AngledCard: React.FC<AngledCardProps> = ({
         width={"9.7199rem"}
         backgroundColor={"brand.border"}
         borderRadius={"0.138rem"}
-        marginBlockStart={'1.1094rem'}
+        marginBlockStart={"1.1094rem"}
       >
         <Box
           width={progressWidth}

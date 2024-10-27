@@ -8,20 +8,13 @@ import FaqSection from "./sections/FaqSection";
 import HeroSection from "./sections/HeroSection";
 import TakeControlSection from "./sections/TakeControlSection";
 import Footer from "./components/Footer";
+import TrustedSection from "./sections/TrustedSection";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <>
-      <HeroSection />
-      <NavBar />
-      <IncomeReportSection />
-      <FeaturesSection />
-      <SalaryPaymentsSection />
-      <PlansSection />
-      <HowItWorksSection />
-      <FaqSection />
-      <TakeControlSection />
-      <Footer />
+      <LandingPage />
     </>
   );
 }

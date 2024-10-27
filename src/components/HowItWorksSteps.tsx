@@ -49,13 +49,13 @@ const HowItWorksSteps = () => {
                     position: "absolute",
                     top: `${index % 2 === 0 ? "20%" : "9%"}`,
                     left: "0%",
-                    width: "27rem",
+                    width: "24rem",
                     height: "2px",
-                    backgroundColor: "#F8FBFD",
+                    backgroundColor: "brand.text",
                     transform: `translateY(-50%) rotate(${
-                      index % 2 === 0 ? "6deg" : "-6deg"
+                      index % 2 === 0 ? "6deg" : "-5deg"
                     })`,
-                    zIndex: -1,
+                    zIndex: 1,
                   }
                 : {}
             }
@@ -68,6 +68,7 @@ const HowItWorksSteps = () => {
               borderRadius={"full"}
               borderWidth={"1px"}
               borderColor={"brand.text"}
+              zIndex={9999}
             >
               <Text
                 fontSize={"2.5rem"}

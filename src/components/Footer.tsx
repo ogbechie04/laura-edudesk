@@ -1,6 +1,5 @@
 import {
   HStack,
-  Icon,
   VStack,
   Text,
   Link,

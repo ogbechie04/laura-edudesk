@@ -92,7 +92,13 @@ const HeroSection = () => {
             </Icon>
           </Button>
         </VStack>
-        <Box backgroundColor={'#718E9F'} padding={'0.9044rem'} borderTopRadius={'1.3124rem'} paddingBottom={0} boxShadow={'0px 4.2px 4.2px 0px rgba(0, 0, 0, 0.25)'}>
+        <Box
+          backgroundColor={"#718E9F"}
+          padding={"0.9044rem"}
+          borderTopRadius={"1.3124rem"}
+          paddingBottom={0}
+          // boxShadow={"0px 4.2px 4.2px 0px rgba(0, 0, 0, 0.25)"}
+        >
           <Image src={dashboard} />
         </Box>
       </VStack>

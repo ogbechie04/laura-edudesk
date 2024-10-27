@@ -8,7 +8,7 @@ const FaqSection = () => {
         <>
         <VStack alignItems={'flex-start'} gap={'3.75rem'}>
             {/* ======== heading ======== */}
-            <VStack gap={'0.9375rem'} fontFamily={'Inter'} color={'brand.grey'}>
+            <VStack gap={'0.9375rem'} fontFamily={'Inter'} color={'brand.grey'} alignItems={'flex-start'}>
                 <Heading fontSize={'4xl'} fontWeight={'semibold'} lineHeight={'2.75rem'} color={'brand.text1'} letterSpacing={'-.72px'}>Frequently Asked Questions</Heading>
                 <Text fontSize={'1.25rem'} lineHeight={'1.875rem'}>Popular questions asked about Edudesk</Text>
             </VStack>

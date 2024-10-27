@@ -1,6 +1,4 @@
-import { Icon, Text, HStack, Button } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import ellipse from "../assets/ellipse-header.svg";
+import { Icon, Text, HStack, Button, Link } from "@chakra-ui/react";
 import Logo from "./Logo";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -19,10 +17,10 @@ const NavBar = () => {
       paddingInline={"6.125rem"}
       paddingBlock={2}
       gap={"1.9375rem"}
-      justifyContent={"space-between"}
+      // justifyContent={"space-between"}
     >
       {/* ======== stack of logo, links and login ======== */}
-      <HStack gap={"4.5625rem"}>
+      <HStack width={"100%"} gap={"4.5625rem"} justifyContent={"space-between"}>
         <Logo headerLogoDisplay="flex" footerLogoDisplay="none" />
         {/* ======== stack for nav links ======== */}
         <HStack gap={"3.4375rem"}>
@@ -37,11 +35,13 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Text fontWeight={"semibold"}>Home</Text>
+            <Link fontWeight={"semibold"} color={"brand.text"} _hover={{textDecoration: 'none'}}>
+              Home
+            </Link>
           </HStack>
           {/* ======== features link ======== */}
           <HStack gap={"1"} alignItems={"center"} paddingInline={"0.90625rem"}>
-            <Icon width={1} height={1}>
+            <Icon width={1} height={1} display={"none"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -50,11 +50,11 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Text fontWeight={"semibold"}>Features</Text>
+            <Link color={"brand.text"} _hover={{textDecoration: 'none'}}>Features</Link>
           </HStack>
           {/* ======== pricing link ======== */}
           <HStack gap={"1"} alignItems={"center"}>
-            <Icon width={1} height={1}>
+            <Icon width={1} height={1} display={"none"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -63,11 +63,11 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Text fontWeight={"semibold"}>Pricing</Text>
+            <Link color={"brand.text"} _hover={{textDecoration: 'none'}}>Pricing</Link>
           </HStack>
           {/* ======== contact us link ======== */}
           <HStack gap={"1"} alignItems={"center"}>
-            <Icon width={1} height={1}>
+            <Icon width={1} height={1} display={"none"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,23 +76,30 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Text fontWeight={"semibold"}>Contact us</Text>
+            <Link color={"brand.text"} _hover={{textDecoration: 'none'}}>Contact us</Link>
           </HStack>
         </HStack>
         {/* ======== log in ======== */}
-        <HStack gap={2.5} justifyContent={"center"} alignItems={"center"}>
-          <Text
-            fontSize={"large"}
-            fontWeight={"bold"}
-            lineHeight={"moderate"}
-            textOverflow={"ellipsis"}
+        <Link _hover={{textDecoration: 'none'}}>
+          <HStack
+            gap={2.5}
+            justifyContent={"center"}
+            alignItems={"center"}
+            color={"brand.text"}
           >
-            Log in
-          </Text>
-          <Icon width={6} height={6}>
-            <BsArrowRight />
-          </Icon>
-        </HStack>
+            <Text
+              fontSize={"large"}
+              fontWeight={"bold"}
+              lineHeight={"moderate"}
+              textOverflow={"ellipsis"}
+            >
+              Log in
+            </Text>
+            <Icon width={6} height={6}>
+              <BsArrowRight />
+            </Icon>
+          </HStack>
+        </Link>
       </HStack>
       {/* ======== cta button ======== */}
       <Button

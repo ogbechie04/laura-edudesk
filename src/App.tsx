@@ -6,10 +6,12 @@ import HowItWorksSection from "./sections/HowItWorksSection";
 import PlansSection from "./sections/PlansSection";
 import FaqSection from "./sections/FaqSection";
 import HeroSection from "./sections/HeroSection";
+import TakeControlSection from "./sections/TakeControlSection";
 
 function App() {
   return (
     <>
+      <HeroSection />
       <NavBar />
       <IncomeReportSection />
       <FeaturesSection />
@@ -17,7 +19,7 @@ function App() {
       <PlansSection />
       <HowItWorksSection />
       <FaqSection />
-      <HeroSection />
+      <TakeControlSection />
     </>
   );
 }

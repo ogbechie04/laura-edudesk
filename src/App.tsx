@@ -4,8 +4,8 @@ import IncomeReportSection from "./sections/IncomeReportSection";
 import SalaryPaymentsSection from "./sections/SalaryPaymentsSection";
 import HowItWorksSection from "./sections/HowItWorksSection";
 import PlansSection from "./sections/PlansSection";
-import FaqAccordion from "./components/FaqAccordion";
-import FaqCard from "./components/FaqCard";
+import FaqSection from "./sections/FaqSection";
+import HeroSection from "./sections/HeroSection";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       <SalaryPaymentsSection />
       <PlansSection />
       <HowItWorksSection />
-      <FaqAccordion />
-      <FaqCard />
+      <FaqSection />
+      <HeroSection />
     </>
   );
 }

@@ -74,7 +74,7 @@ const FaqAccordion = () => {
                 <Image className="minus-icon" as={HiOutlineMinusCircle} />
               </HStack>
             </AccordionItemTrigger>
-            <AccordionItemContent padding={'unset'}>{faq.answer}</AccordionItemContent>
+            <AccordionItemContent padding={'unset'} color={'brand.grey'}>{faq.answer}</AccordionItemContent>
           </AccordionItem>
         ))}
       </AccordionRoot>

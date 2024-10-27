@@ -45,7 +45,7 @@ const FaqCard = () => {
           display={"flex"}
           gap={2.5}
           borderRadius={"1.375rem"}
-          paddingBlock={"0.6125em"}
+          paddingBlock={"0.6125rem"}
           paddingInline={"0.625rem"}
           width={"15.125rem"}
           alignItems={"center"}

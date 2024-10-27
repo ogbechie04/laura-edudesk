@@ -1,0 +1,17 @@
+/* Default state: show plus icon */
+.plus-icon {
+    display: block;
+  }
+
+  .minus-icon {
+    display: none;
+  }
+
+  /* Open state: show minus icon and hide plus icon */
+  .accordionTrigger[data-state="open"] .plus-icon {
+    display: none;
+  }
+
+  .accordionTrigger[data-state="open"] .minus-icon {
+    display: block;
+  }

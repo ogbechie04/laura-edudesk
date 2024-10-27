@@ -13,10 +13,10 @@ import { BsArrowRight } from "react-icons/bs";
 const PlanCard = () => {
   return (
     <>
-      <HStack alignItems={"center"}>
+      <HStack alignItems={"center"} gap={'1.8125rem'}>
         {/* ======== card 1 ======== */}
         <VStack
-          backgroundColor={"brand.background"}
+          backgroundColor={"brand.text"}
           paddingBlock={"2.0625rem"}
           paddingInline={"1.4375rem"}
           alignItems={"flex-start"}
@@ -227,7 +227,7 @@ const PlanCard = () => {
 
         {/* ======== card 3 ======== */}
         <VStack
-          backgroundColor={"brand.background"}
+          backgroundColor={"brand.text"}
           paddingBlock={"2.0625rem"}
           paddingInline={"1.4375rem"}
           alignItems={"flex-start"}

@@ -3,7 +3,7 @@ import HowItWorksSteps from "../components/HowItWorksSteps";
 
 const HowItWorksSection = () => {
   return (
-    <VStack width={'100%'} alignContent={'stretch'}>
+    <VStack width={'100%'} alignContent={'stretch'} gap={'3.75rem'}>
       <VStack width={'100%'}>
         <VStack textAlign={"center"} gap={"0.9375rem"}>
           <Heading

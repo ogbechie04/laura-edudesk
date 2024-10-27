@@ -23,7 +23,7 @@ const NavBar = () => {
       <HStack width={"100%"} gap={"4.5625rem"} justifyContent={"space-between"}>
         <Logo headerLogoDisplay="flex" footerLogoDisplay="none" />
         {/* ======== stack for nav links ======== */}
-        <HStack gap={"3.4375rem"}>
+        <HStack  justifyContent={'space-between'} width={'27.8125rem'}>
           {/* ======== home link ======== */}
           <HStack gap={"1"} alignItems={"center"}>
             <Icon width={1} height={1}>
@@ -35,12 +35,16 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Link fontWeight={"semibold"} color={"brand.text"} _hover={{textDecoration: 'none'}}>
+            <Link
+              fontWeight={"semibold"}
+              color={"brand.text"}
+              _hover={{ textDecoration: "none" }}
+            >
               Home
             </Link>
           </HStack>
           {/* ======== features link ======== */}
-          <HStack gap={"1"} alignItems={"center"} paddingInline={"0.90625rem"}>
+          <HStack gap={"1"} alignItems={"center"}>
             <Icon width={1} height={1} display={"none"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +54,9 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Link color={"brand.text"} _hover={{textDecoration: 'none'}}>Features</Link>
+            <Link color={"brand.text"} _hover={{ textDecoration: "none" }}>
+              Features
+            </Link>
           </HStack>
           {/* ======== pricing link ======== */}
           <HStack gap={"1"} alignItems={"center"}>
@@ -63,7 +69,9 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Link color={"brand.text"} _hover={{textDecoration: 'none'}}>Pricing</Link>
+            <Link color={"brand.text"} _hover={{ textDecoration: "none" }}>
+              Pricing
+            </Link>
           </HStack>
           {/* ======== contact us link ======== */}
           <HStack gap={"1"} alignItems={"center"}>
@@ -76,11 +84,18 @@ const NavBar = () => {
                 <circle cx="2" cy="2" r="2" fill="#F8FBFD" />
               </svg>
             </Icon>
-            <Link color={"brand.text"} _hover={{textDecoration: 'none'}}>Contact us</Link>
+            <Link
+              color={"brand.text"}
+              _hover={{ textDecoration: "none" }}
+              textWrap={"nowrap"}
+              whiteSpace={"nowrap"}
+            >
+              Contact us
+            </Link>
           </HStack>
         </HStack>
         {/* ======== log in ======== */}
-        <Link _hover={{textDecoration: 'none'}}>
+        <Link _hover={{ textDecoration: "none" }}>
           <HStack
             gap={2.5}
             justifyContent={"center"}
@@ -92,6 +107,8 @@ const NavBar = () => {
               fontWeight={"bold"}
               lineHeight={"moderate"}
               textOverflow={"ellipsis"}
+              textWrap={"nowrap"}
+              whiteSpace={"nowrap"}
             >
               Log in
             </Text>

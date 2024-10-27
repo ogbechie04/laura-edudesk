@@ -47,13 +47,13 @@ const HowItWorksSteps = () => {
                 ? {
                     content: `""`,
                     position: "absolute",
-                    top: `${index % 2 === 0 ? "20%" : "9%"}`,
+                    top: `${index % 2 === 0 ? "18%" : "8%"}`,
                     left: "0%",
-                    width: "24rem",
+                    width: "22rem",
                     height: "2px",
                     backgroundColor: "brand.text",
                     transform: `translateY(-50%) rotate(${
-                      index % 2 === 0 ? "6deg" : "-5deg"
+                      index % 2 === 0 ? "9deg" : "-8deg"
                     })`,
                     zIndex: 1,
                   }

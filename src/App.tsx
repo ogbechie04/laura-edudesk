@@ -7,6 +7,7 @@ import PlansSection from "./sections/PlansSection";
 import FaqSection from "./sections/FaqSection";
 import HeroSection from "./sections/HeroSection";
 import TakeControlSection from "./sections/TakeControlSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <HowItWorksSection />
       <FaqSection />
       <TakeControlSection />
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,4 @@
-import { HStack, Image, Text, Link } from "@chakra-ui/react";
-import { Link as ReactRouterLink } from "react-router-dom";
+import { HStack, Image, Text } from "@chakra-ui/react";
 import eHeaderLogo from "../assets/e-header.svg";
 import eFooterLogo from "../assets/e-footer.svg";
 import headerEllipse from "../assets/ellipse-header.svg";

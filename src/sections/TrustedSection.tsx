@@ -44,7 +44,7 @@ const TrustedSection = () => {
             {schools.map((school, index) => (
                 <HStack gap={'0.5625rem'} key={index} alignItems={'center'}>
                     <Image src={school.logo} />
-                    <Text color={'brand.grey'} fontSize={'x-large'} lineHeight={'normal'} fontWeight={'semibold'}>{school.name}</Text>
+                    <Text whiteSpace={'nowrap'} color={'brand.grey'} fontSize={'x-large'} lineHeight={'normal'} fontWeight={'semibold'}>{school.name}</Text>
                 </HStack>
             ))}
         </HStack>
